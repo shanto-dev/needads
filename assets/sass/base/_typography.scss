@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Gilmer';
-    src: url('/assets/fonts/Gilmer-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Gilmer-Regular.woff') format('woff'),
-        url('/assets/fonts/Gilmer-Regular.ttf') format('truetype');
+    src: url('../fonts/Gilmer-Regular.woff2') format('woff2'),
+        url('../fonts/Gilmer-Regular.woff') format('woff'),
+        url('../fonts/Gilmer-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,9 +10,9 @@
 
 @font-face {
     font-family: 'Gilmer';
-    src: url('/assets/fonts/Gilmer-Bold.woff2') format('woff2'),
-        url('/assets/fonts/Gilmer-Bold.woff') format('woff'),
-        url('/assets/fonts/Gilmer-Bold.ttf') format('truetype');
+    src: url('../fonts/Gilmer-Bold.woff2') format('woff2'),
+        url('../fonts/Gilmer-Bold.woff') format('woff'),
+        url('../fonts/Gilmer-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -20,9 +20,9 @@
 
 @font-face {
     font-family: 'Gilmer';
-    src: url('/assets/fonts/Gilmer-Heavy.woff2') format('woff2'),
-        url('/assets/fonts/Gilmer-Heavy.woff') format('woff'),
-        url('/assets/fonts/Gilmer-Heavy.ttf') format('truetype');
+    src: url('../fonts/Gilmer-Heavy.woff2') format('woff2'),
+        url('../fonts/Gilmer-Heavy.woff') format('woff'),
+        url('../fonts/Gilmer-Heavy.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -30,18 +30,18 @@
 
 @font-face {
     font-family: 'Gilmer';
-    src: url('/assets/fonts/Gilmer-Medium.woff2') format('woff2'),
-        url('/assets/fonts/Gilmer-Medium.woff') format('woff'),
-        url('/assets/fonts/Gilmer-Medium.ttf') format('truetype');
+    src: url('../fonts/Gilmer-Medium.woff2') format('woff2'),
+        url('../fonts/Gilmer-Medium.woff') format('woff'),
+        url('../fonts/Gilmer-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Eras Bold ITC';
-    src: url('/assets/fonts/ErasITC-Bold.woff2') format('woff2'),
-        url('/assets/fonts/ErasITC-Bold.woff') format('woff'),
-        url('/assets/fonts/ErasITC-Bold.ttf') format('truetype');
+    src: url('../fonts/ErasITC-Bold.woff2') format('woff2'),
+        url('../fonts/ErasITC-Bold.woff') format('woff'),
+        url('../fonts/ErasITC-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
