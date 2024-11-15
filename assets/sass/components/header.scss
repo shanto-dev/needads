@@ -1,0 +1,22 @@
+.nad_header_sec {
+    position: relative;
+    padding: 22px 0px;
+}
+
+.nad_nav {
+    position: relative;
+
+    & ul {
+        @include displayFlex(inline-flex, end, start, row);
+        gap: 23px;
+
+        & li {
+            & a {
+                font-family: Gilmer;
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 24px;
+            }
+        }
+    }
+}

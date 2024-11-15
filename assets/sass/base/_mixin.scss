@@ -1,0 +1,99 @@
+@mixin screenUp-1600 {
+    @media (min-width: 1601px) {
+        @content;
+    }
+}
+
+@mixin screen-1700 {
+    @media (max-width: 1700px) {
+        @content;
+    }
+}
+
+@mixin screen-1600 {
+    @media (max-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin screen-1460 {
+    @media (max-width: 1460px) {
+        @content;
+    }
+}
+
+@mixin screen-1400 {
+    @media (max-width: 1399.98px) {
+        @content;
+    }
+}
+
+@mixin screen-1320 {
+    @media (max-width: 1320px) {
+        @content;
+    }
+}
+
+@mixin screen-1200-to-1320 {
+    @media (min-width: 1200px) and (max-width: 1320px) {
+        @content;
+    }
+}
+
+@mixin screen-1260 {
+    @media (max-width: 1260px) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+@mixin screen-992-to-1199 {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+@mixin screen-992 {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+
+@mixin screen-768 {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+
+@mixin portrait-phone {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+@mixin screen-460 {
+    @media (max-width: 460px) {
+        @content;
+    }
+}
+
+@mixin screen-400 {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
+
+
+
+
+// SCSS Mixin for Display Flex
+@mixin displayFlex($flex: flex, $justifyContent: center, $alignItems: center, $flexDirection: column) {
+    display: $flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $flexDirection;
+}

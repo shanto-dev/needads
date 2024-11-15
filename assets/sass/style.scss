@@ -1,0 +1,22 @@
+/*
+Theme Name: Need Add HTML Template
+Author: Shanto
+Author URI: 
+Tags: Need Add, store, online-store, html5 template
+Description: Need Add HTML5 Template. 
+Version: 1.0.0
+*/
+
+/************************************** base css **************************************/
+@import 'base/variables';
+@import 'base/mixin';
+@import 'base/typography';
+@import 'base/reset';
+@import 'base/spacing';
+
+/****************************** Components styles ******************************/
+@import 'components/header';
+@import 'components/footer';
+
+/****************************** page styles ******************************/
+@import 'pages/index';

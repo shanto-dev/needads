@@ -1,0 +1,45 @@
+// Gutter Customize 
+.g-30,
+.gx-30 {
+    --bs-gutter-x: 30px;
+
+    @include large-screen {
+        --bs-gutter-x: 24px;
+    }
+}
+
+.g-30,
+.gy-30 {
+    --bs-gutter-y: 30px;
+
+    @include large-screen {
+        --bs-gutter-y: 24px;
+    }
+}
+
+.g-46,
+.gx-46 {
+    --bs-gutter-x: 46px;
+
+    @include large-screen {
+        --bs-gutter-x: 24px;
+    }
+}
+
+.g-46,
+.gy-46 {
+    --bs-gutter-y: 46px;
+
+    @include large-screen {
+        --bs-gutter-y: 24px;
+    }
+}
+
+.py-136 {
+    padding-top: 136px;
+    padding-bottom: 136px;
+}
+
+.mb-71 {
+    margin-bottom: 71px;
+}

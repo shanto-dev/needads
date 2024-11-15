@@ -1,0 +1,76 @@
+// Footer 
+footer.footer_sec {
+    position: relative;
+    padding: 30px 0 20px;
+    background: var(--primary-color);
+}
+
+.ftop_cantact {
+    @include displayFlex(flex, end, end, column);
+    gap: 2px;
+
+    a {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24px;
+        color: var(--white-color);
+
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+}
+
+.footer_copyRight_cnt {
+    position: relative;
+
+    & p {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24px;
+        color: var(--white-color);
+        margin-bottom: 0;
+    }
+
+    & ul {
+        position: relative;
+        @include displayFlex(inline-flex, start, start, row);
+        gap: 16px;
+
+        & li {
+            position: relative;
+
+            &:not(:last-child) {
+                &::after {
+                    position: absolute;
+                    content: "|";
+                    right: -10px;
+                    top: 2.5px;
+                    color: var(--white-color);
+                    font-weight: 700;
+                    font-size: 17px;
+                }
+            }
+
+            & a {
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 24px;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                color: var(--white-color);
+
+                &:hover {
+                    text-decoration: none;
+                    color: var(--secondary-color);
+                }
+            }
+
+        }
+    }
+}
+
+.footer_social {
+    @include displayFlex(inline-flex, end, center, row);
+    gap: 38px;
+}

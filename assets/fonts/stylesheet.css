@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Gilmer';
+    src: url('Gilmer-Regular.woff2') format('woff2'),
+        url('Gilmer-Regular.woff') format('woff'),
+        url('Gilmer-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilmer';
+    src: url('Gilmer-Bold.woff2') format('woff2'),
+        url('Gilmer-Bold.woff') format('woff'),
+        url('Gilmer-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilmer';
+    src: url('Gilmer-Heavy.woff2') format('woff2'),
+        url('Gilmer-Heavy.woff') format('woff'),
+        url('Gilmer-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilmer';
+    src: url('Gilmer-Medium.woff2') format('woff2'),
+        url('Gilmer-Medium.woff') format('woff'),
+        url('Gilmer-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
