@@ -8,10 +8,45 @@
 .banner_heading_cont {
     position: relative;
 
+    h4.page_title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.4px;
+        text-align: left;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        color: var(--white-color);
+        margin-bottom: 34px;
+    }
+
     & h2 {
         font-size: 40px;
         font-weight: 800;
         line-height: 56.97px;
+        color: var(--white-color);
+    }
+}
+
+.caseStu_banner_heading_sec {
+    position: relative;
+    padding: 47px 0 34px;
+    background: var(--primary-color);
+}
+
+.case_studies_banner_cnt {
+    & h2 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.2px;
+        color: var(--white-color)
+    }
+}
+
+.case_studies_banner_cntR {
+    & h2 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.4px;
         color: var(--white-color);
     }
 }

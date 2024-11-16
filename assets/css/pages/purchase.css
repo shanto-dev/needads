@@ -1,0 +1,50 @@
+.g-40,
+.gx-40 {
+  --bs-gutter-x: 40px; }
+
+/* Step form  */
+.step-container {
+  position: relative;
+  text-align: center;
+  -webkit-transform: translateY(-43%);
+  -ms-transform: translateY(-43%);
+  transform: translateY(-43%);
+  margin-bottom: 133px; }
+
+.step-circle {
+  width: auto;
+  height: auto;
+  border-radius: 52px;
+  background-color: transparent;
+  color: #313131;
+  font-family: Gilmer;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 14px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 4px; }
+
+.step-circle.active {
+  background-color: #E9EFFF; }
+
+#nda-multi-step-form {
+  overflow-x: hidden; }
+
+.step > h3 {
+  font-family: Gilmer;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 43px;
+  text-align: left;
+  color: #575757;
+  margin-bottom: 44px; }

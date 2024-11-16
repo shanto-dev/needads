@@ -1,0 +1,82 @@
+.g-40,
+.gx-40 {
+    --bs-gutter-x: 40px;
+}
+
+.purchase_page_sec {
+    @include displayFlex(flex, start, start, row);
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+
+    &>* {
+        flex: 0 0 auto;
+    }
+}
+
+.purchase_form_area {
+    width: calc(100% - 451px);
+
+    & #container {
+        max-width: 624px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.purchase_sidebar_area {
+    width: 451px;
+    background: #D8E2FC;
+    min-height: 100vh;
+    padding: 49px 31px 49px 52px;
+
+    & .logo {
+        margin-bottom: 174px;
+    }
+}
+
+
+/* Step form  */
+
+.step-container {
+    position: relative;
+    text-align: center;
+    transform: translateY(-43%);
+    margin-bottom: 133px;
+}
+
+.step-circle {
+    width: auto;
+    height: auto;
+    border-radius: 52px;
+    background-color: transparent;
+    color: #313131;
+    font-family: Gilmer;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.step-circle.active {
+    background-color: #E9EFFF;
+}
+
+#nda-multi-step-form {
+    overflow-x: hidden;
+}
+
+.step>h3 {
+    font-family: Gilmer;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 43px;
+    text-align: left;
+    color: #575757;
+    margin-bottom: 44px;
+}

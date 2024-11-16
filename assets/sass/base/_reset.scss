@@ -77,7 +77,7 @@ img {
 }
 
 .cus-sm-container {
-    max-width: 952px;
+    max-width: 978px;
 }
 
 .primary_button {
@@ -96,4 +96,9 @@ img {
         background: var(--primary-color);
         color: var(--white-color);
     }
+}
+
+.img-fluid {
+    max-width: 100%;
+    width: auto;
 }

@@ -1,0 +1,237 @@
+.case_studies_banner_cnt2{
+    padding-right: 0;
+}
+.case_studies_banner_cntR2{
+    padding-left: 130px !important;
+}
+.cStudie_sec {
+    position: relative;
+    margin-top: 106px;
+    background: var(--gray-background);
+    padding: 59px 0 100px;
+}
+
+.case_studies_thumb {
+    @include displayFlex(flex, space-between, start, row);
+    max-width: 899px;
+    margin: 0 auto;
+
+    & img:nth-child(1) {
+        padding-left: 70px;
+    }
+
+    & img:nth-child(2) {
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-top: -108px;
+    }
+}
+.case_studies_thumb2{
+    & img:nth-child(1) {
+        padding-left: 0;
+        margin-left: -95px;
+    }
+    & img:nth-child(2) {
+        margin-right: -145px;
+    }
+}
+.case_studies_storyCnt {
+    position: relative;
+    padding-left: 70px;
+    max-width: 899px;
+    margin: 0 auto;
+
+    & h3 {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 28.8px;
+        margin-bottom: 32px;
+    }
+
+    & p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25.61px;
+        color: var(--heading-color);
+        margin: 0;
+        max-width: 409px;
+    }
+}
+.case_studies_storyCnt2{
+    & p{
+        max-width: 431px;
+    }
+}
+// TEstimonial 
+.cStudies_testimonial_wrap {
+    max-width: 875px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.31);
+    padding: 16px 99px 40px;
+    margin-top: -59px;
+    background: var(--white-background);
+    position: relative;
+    z-index: 22;
+}
+
+.cStudies_testimonial_item {
+    position: relative;
+
+    & img {
+        margin-bottom: 36px;
+    }
+
+    & p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--heading-color);
+        margin-bottom: 46px;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        color: var(--primary-color);
+        margin: 0;
+    }
+}
+
+.whatWe_did_sec {
+    position: relative;
+    background: var(--white-background);
+    padding: 81px 0 59px;
+}
+
+.whatWe_did_cnt {
+    & h2 {
+        font-family: Gilmer;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 43.2px;
+        color: var(--primary-color);
+        margin-bottom: 23px;
+    }
+
+    & ul {
+        list-style: auto;
+        max-width: 474px;
+        width: 100%;
+        margin: 0 auto;
+
+        & li {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.6px;
+            color: var(--primary-color);
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+.whatWe_did_cnt2 {
+    & ul{
+        max-width: 580px;
+    }
+}
+
+.cStudies_result_sec {
+    position: relative;
+    background: var(--gray-background);
+    padding: 27px 0 21px;
+
+    & h2 {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 43.2px;
+        color: var(--primary-color);
+        margin-bottom: 12px;
+    }
+
+    & h4 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.6px;
+        color: var(--primary-color);
+        margin-bottom: 56px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--heading-color);
+    }
+}
+
+.counter_item {
+    padding: 7px 12px 10px;
+    border-radius: 14px;
+    background-color: var(--green-light-background);
+    width: 181px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+
+    & .countfact {
+        flex-direction: column;
+
+        & h3 {
+            display: inline-flex;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 58px;
+            color: var(--secondary-color);
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+.cStudies_result_sec2{
+    & .counter_item{
+        width: 208px;
+    }
+}
+
+.cStudies_result_sec {
+    & .col-md-4:nth-child(1) {
+        & .counter_item {
+            margin-right: auto;
+            margin-left: 0;
+        }
+    }
+
+    & .col-md-4:nth-child(3) {
+        & .counter_item {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}
+
+.cStudies_result_contact {
+    position: relative;
+    padding: 25px 0 101px;
+}
+
+.cStudies_result_cntact {
+    h2 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.6px;
+        color: var(--primary-color);
+        text-align: center;
+
+        & a {
+            color: inherit;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+}

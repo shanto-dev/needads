@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Need Add</title>
+
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.png">
+
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="purchase_page_sec">
+        <div class="purchase_form_area">
+            <div id="container" class="container mt-5">
+                <div class="step-container d-flex justify-content-center">
+                    <div class="step-circle" onclick="displayStep(1)">1. <span>The Basics</span></div>
+                    <div class="step-circle" onclick="displayStep(2)">2. <span>Tell us more</span></div>
+                    <div class="step-circle" onclick="displayStep(3)">3. <span>Payment</span></div>
+                </div>
+
+                <form id="nda-multi-step-form">
+                    <div class="step step-1">
+                        <!-- Step 1 form fields here -->
+                        <h3 class="text-center">The Basics</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3 gx-40">
+                                    <label for="fname" class="form-label d-none">First Name</label>
+                                    <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3 gx-40">
+                                    <label for="lname" class="form-label d-none">Last Name</label>
+                                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3 gx-40">
+                                    <label for="email" class="form-label d-none">Last Name</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3 gx-40">
+                                    <label for="phone" class="form-label d-none">Last Name</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn btn-primary next-step">Next ➜</button>
+                        </div>
+                    </div>
+
+                    <div class="step step-2">
+                        <!-- Step 2 form fields here -->
+                        <h3 class="text-center">Tell us more</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3 gx-40">
+                                    <label for="bsnsname" class="form-label d-none">Business Name</label>
+                                    <input type="text" class="form-control" id="bsnsname" name="bsnsname" placeholder="Business Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3 gx-40">
+                                    <label for="Location" class="form-label d-none">Location</label>
+                                    <input type="text" class="form-control" id="Location" name="Location" placeholder="Location">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3 gx-40">
+                                    <label for="advtslocation" class="form-label d-none">Advertising Location</label>
+                                    <input type="text" class="form-control" id="advtslocation" name="advtslocation" placeholder="Advertising Location">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3 gx-40">
+                                    <label for="binstime" class="form-label d-none">Years in business</label>
+                                    <input type="text" class="form-control" id="binstime" name="binstime" placeholder="Years in business">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3 gx-40">
+                                    <label for="ymessage" class="form-label d-none">Message</label>
+                                    <input type="text">
+                                    <textarea class="form-control" id="ymessage" name="ymessage" placeholder="What do you hope to achieve with our service?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn btn-primary next-step">Next ➜</button>
+                        </div>
+                    </div>
+
+                    <div class="step step-3">
+                        <!-- Step 3 form fields here -->
+                        <h3 class="text-center">Payment</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label for="field3" class="form-label d-none">Field 3:</label>
+                                    <input type="text" class="form-control" id="field3" name="field3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <!-- <button type="submit" class="btn btn-success">Submit</button> -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="purchase_sidebar_area">
+            <div class="text-end">
+                <a href="index.html" class="logo d-inline-block text-end"><img src="assets/images/sidebar-logo.png" alt="NeedAdd"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
