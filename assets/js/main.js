@@ -1,7 +1,18 @@
-var bramdSwiper = new Swiper('.brand_carousel', {
+// Testimonial 
+var testimonialSwiper = new Swiper('.cStudies_testimonial_carousel', {
     loop: true,
     autoplay: {
         delay: 3000,
+        disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+});
+
+var bramdSwiper = new Swiper('.brand_carousel', {
+    loop: true,
+    autoplay: {
+        delay: 2200,
         disableOnInteraction: false,
     },
     slidesPerView: 1,
@@ -28,17 +39,6 @@ var bramdSwiper = new Swiper('.brand_carousel', {
             slidesPerView: 5
         }
     }
-});
-
-// Testimonial 
-var testimonialSwiper = new Swiper('.cStudies_testimonial_carousel', {
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    slidesPerView: 1,
-    spaceBetween: 30,
 });
 
 $(".countfact").appear();
