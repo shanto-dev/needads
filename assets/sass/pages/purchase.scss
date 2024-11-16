@@ -9,6 +9,14 @@
     overflow: hidden;
     min-height: 100vh;
 
+    @include screen-992 {
+        flex-wrap: wrap;
+
+        &>* {
+            width: 100%;
+        }
+    }
+
     &>* {
         flex: 0 0 auto;
     }
@@ -22,6 +30,14 @@
         width: 100%;
         margin: 0 auto;
     }
+
+    @include large-screen {
+        width: calc(100% - 400px);
+    }
+
+    @include screen-992 {
+        width: 100%;
+    }
 }
 
 .purchase_sidebar_area {
@@ -33,6 +49,17 @@
     & .logo {
         margin-bottom: 174px;
     }
+
+    @include large-screen {
+
+        width: 400px;
+        padding: 49px 25px 49px 40px;
+    }
+
+    @include screen-992 {
+        width: 100%;
+        margin-top: 65px;
+    }
 }
 
 
@@ -43,6 +70,10 @@
     text-align: center;
     transform: translateY(-43%);
     margin-bottom: 133px;
+
+    @include screen-992 {
+        margin-bottom: 80px;
+    }
 }
 
 .step-circle {
@@ -135,4 +166,77 @@
     text-align: left;
     color: #575757;
     margin-bottom: 44px;
+}
+
+.step {
+    & button[type="button"] {
+        margin-top: 16px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        color: var(--white-color);
+        width: 150px;
+        height: 55px;
+        @include displayFlex(flex, center, center, row);
+        background: var(--secondary-color);
+        border: 0;
+        outline: unset !important;
+        box-shadow: unset !important;
+        margin-left: auto;
+
+        &:hover {
+            background: var(--primary-color);
+        }
+    }
+}
+
+.step-1 {
+    & button[type="button"] {
+        margin-top: 58px;
+    }
+}
+
+// Sidebar 
+.purchase_sidebar_cnt {
+    position: relative;
+
+    & h2 {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 72px;
+        margin-bottom: 30px;
+
+        @include large-screen {
+            font-size: 50px;
+            line-height: 62px;
+        }
+    }
+
+    & h4 {
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 26.4px;
+        color: #575757;
+        margin-bottom: 38px;
+    }
+
+    & ul {
+        @include screen-992 {
+            max-width: 340px;
+            width: 100%;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        & li {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 26.4px;
+            color: #7B7B7B;
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    }
 }
