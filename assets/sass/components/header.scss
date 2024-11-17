@@ -9,6 +9,10 @@
     & ul {
         @include displayFlex(inline-flex, end, start, row);
         gap: 23px;
+        @include portrait-phone{
+            flex-direction: column;
+            gap: 8px;
+        }
 
         & li {
             & a {

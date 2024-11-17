@@ -59,6 +59,11 @@
     @include screen-992 {
         width: 100%;
         margin-top: 65px;
+        min-height: auto;
+    }
+
+    @include portrait-phone {
+        padding: 40px 25px 40px 25px;
     }
 }
 
@@ -82,7 +87,6 @@
     border-radius: 52px;
     background-color: transparent;
     color: #313131;
-    font-family: Gilmer;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -92,6 +96,17 @@
     justify-content: center;
     cursor: pointer;
     gap: 4px;
+
+    @include portrait-phone {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    @include screen-460 {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 14px 18px;
+    }
 }
 
 .step-circle.active {
@@ -166,6 +181,12 @@
     text-align: left;
     color: #575757;
     margin-bottom: 44px;
+
+    @include portrait-phone {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 38px;
+    }
 }
 
 .step {
@@ -233,6 +254,11 @@
             font-weight: 500;
             line-height: 26.4px;
             color: #7B7B7B;
+
+            @include portrait-phone {
+                font-size: 20px;
+                line-height: 24.4px;
+            }
 
             &:not(:last-child) {
                 margin-bottom: 16px;
