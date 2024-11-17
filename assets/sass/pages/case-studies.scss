@@ -1,12 +1,22 @@
-.caseStu_banner_heading_sec{
+.caseStu_banner_heading_sec {
     margin-top: 22px;
 }
-.case_studies_banner_cnt2{
+
+.case_studies_banner_cnt2 {
     padding-right: 0;
 }
-.case_studies_banner_cntR2{
+
+.case_studies_banner_cntR2 {
     padding-left: 130px !important;
+
+    @include screen-992 {
+        padding-left: 40px !important;
+    }
+    @include screen-768 {
+        padding-left: 12px !important;
+    }
 }
+
 .cStudie_sec {
     position: relative;
     margin-top: 106px;
@@ -18,31 +28,80 @@
     @include displayFlex(flex, space-between, start, row);
     max-width: 899px;
     margin: 0 auto;
+    @include screen-768{
+        flex-direction: column;
+        gap: 24px;
+    }
 
     & img:nth-child(1) {
         padding-left: 70px;
+
+        @include screen-992 {
+            padding-left: 0;
+            margin-right: 24px;
+        }
     }
 
     & img:nth-child(2) {
         border-radius: 10px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin-top: -108px;
+
+        @include screen-992 {
+            width: 66%;
+        }
+        @include screen-768{
+            margin:0;
+            width: 100%;
+            margin-bottom: 32px;
+        }
     }
 }
-.case_studies_thumb2{
+
+.case_studies_thumb2 {
     & img:nth-child(1) {
         padding-left: 0;
         margin-left: -95px;
+
+        @include large-screen {
+            margin-left: 0;
+            max-width: 40%;
+            width: 100%;
+            margin-right: 24px;
+        }
+        @include screen-768 {
+            max-width: 60%;
+        }
     }
+
     & img:nth-child(2) {
         margin-right: -145px;
+        max-width: 100%;
+
+        @include large-screen {
+            margin-right: 0;
+            width: 61%;
+        }
+
+        @include screen-992 {
+            width: 58%;
+        }
+
+        @include screen-768 {
+            width: 100%;
+        }
     }
 }
+
 .case_studies_storyCnt {
     position: relative;
     padding-left: 70px;
     max-width: 899px;
     margin: 0 auto;
+
+    @include screen-992 {
+        padding-left: 0;
+    }
 
     & h3 {
         font-size: 24px;
@@ -60,11 +119,13 @@
         max-width: 409px;
     }
 }
-.case_studies_storyCnt2{
-    & p{
+
+.case_studies_storyCnt2 {
+    & p {
         max-width: 431px;
     }
 }
+
 // TEstimonial 
 .cStudies_testimonial_wrap {
     max-width: 875px;
@@ -76,6 +137,13 @@
     background: var(--white-background);
     position: relative;
     z-index: 22;
+
+    @include screen-992 {
+        padding: 16px 60px 40px;
+    }
+    @include screen-768 {
+        padding: 16px 20px 30px;
+    }
 }
 
 .cStudies_testimonial_item {
@@ -123,6 +191,9 @@
         max-width: 474px;
         width: 100%;
         margin: 0 auto;
+        @include screen-768{
+            padding-left: 20px;
+        }
 
         & li {
             font-size: 18px;
@@ -136,8 +207,9 @@
         }
     }
 }
+
 .whatWe_did_cnt2 {
-    & ul{
+    & ul {
         max-width: 580px;
     }
 }
@@ -146,6 +218,7 @@
     position: relative;
     background: var(--gray-background);
     padding: 27px 0 21px;
+    overflow: hidden;
 
     & h2 {
         font-size: 36px;
@@ -168,6 +241,10 @@
         font-weight: 600;
         line-height: 24px;
         color: var(--heading-color);
+        @include screen-768{
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 }
 
@@ -194,8 +271,9 @@
         }
     }
 }
-.cStudies_result_sec2{
-    & .counter_item{
+
+.cStudies_result_sec2 {
+    & .counter_item {
         width: 208px;
     }
 }

@@ -4,6 +4,10 @@
     border-radius: 20px;
     padding: 49px 20px 105px;
     margin: 22px auto 37px;
+
+    @include screen-768 {
+        padding: 50px 2px 60px;
+    }
 }
 
 .page_header_sec {
@@ -15,6 +19,11 @@
         line-height: 48px;
         text-align: center;
         margin-bottom: 12px;
+
+        @include screen-768 {
+            font-size: 30px;
+            line-height: 39px;
+        }
     }
 
     & p {
@@ -23,6 +32,7 @@
         line-height: 18px;
         text-align: center;
         color: var(--heading-color);
+        margin: 0;
     }
 }
 
@@ -32,6 +42,14 @@
     padding: 66px 30px 66px 60px;
     @include displayFlex(flex, end, stretch, column);
     height: 100%;
+
+    @include large-screen {
+        padding: 44px 20px 44px 42px;
+    }
+
+    @include large-screen {
+        padding: 40px 20px 30px 20px;
+    }
 
     & h4 {
         font-size: 32px;
@@ -66,12 +84,27 @@
     background-position: center;
     background-size: cover;
 
+    @include screen-768 {
+        padding: 25px 25px 25px 25px;
+    }
+
+
     & h3 {
         font-size: 35px;
         font-weight: 700;
         line-height: 43.2px;
         color: var(--white-color);
         margin-bottom: 16px;
+
+        @include large-screen {
+            font-size: 27px;
+            line-height: 35px;
+        }
+
+        @include screen-768 {
+            font-size: 24px;
+            line-height: 31px;
+        }
     }
 
     & .post_author {
@@ -120,6 +153,20 @@
         font-weight: 800;
         line-height: 87.37px;
         margin-bottom: 26px;
+
+        @include large-screen {
+            font-size: 72px;
+            line-height: 82.37px;
+        }
+
+        @include screen-768 {
+            font-size: 61px;
+            line-height: 71.37px;
+        }
+        @include screen-400{
+            font-size: 52px;
+            line-height: 62.37px;
+        }
     }
 
     & p {
@@ -137,6 +184,10 @@
     flex-wrap: wrap;
     gap: 30px;
 
+    @include screen-768 {
+        gap: 24px;
+    }
+
     & a {
         display: inline-block;
         padding: 27px 38px 28px;
@@ -146,6 +197,16 @@
         font-weight: 400;
         line-height: 28.8px;
         color: var(--heading-color);
+
+        @include large-screen {
+            padding: 22px 24px 23px;
+        }
+
+        @include screen-768 {
+            font-size: 20px;
+            line-height: 24.8px;
+            padding: 18px 17px 19px;
+        }
     }
 }
 
@@ -157,6 +218,10 @@
     border-radius: 17px;
     max-width: 582px;
     margin: 0 auto;
+
+    @include screen-768 {
+        padding: 30px 20px 26px;
+    }
 
     & h2 {
         font-size: 36px;
@@ -183,7 +248,8 @@
     & input:placeholder {
         color: var(--heading-color);
     }
-    & textarea{
+
+    & textarea {
         height: 240px;
     }
 
@@ -215,7 +281,8 @@
         border: unset;
         outline: unset;
         color: var(--heading-color);
-        &:hover{
+
+        &:hover {
             background: var(--secondary-color)
         }
     }
