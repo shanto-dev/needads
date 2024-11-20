@@ -1,0 +1,21 @@
+.thankYou_sec {
+  position: relative;
+  margin-top: 22px;
+  height: 100vh; }
+
+.thankYou_cnt {
+  background: var(--gray-light-background);
+  padding: 49px 0 124px;
+  border-radius: 20px; }
+  .thankYou_cnt h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: center; }
+  .thankYou_cnt p {
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 18px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    color: var(--heading-color); }

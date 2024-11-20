@@ -26,13 +26,13 @@
     width: calc(100% - 451px);
 
     & #container {
-        max-width: 624px;
+        max-width: 808px;
         width: 100%;
         margin: 0 auto;
     }
 
     @include large-screen {
-        width: calc(100% - 400px);
+        width: calc(100% - 370px);
     }
 
     @include screen-992 {
@@ -52,8 +52,8 @@
 
     @include large-screen {
 
-        width: 400px;
-        padding: 49px 25px 49px 40px;
+        width: 370px;
+        padding: 49px 25px 49px 30px;
     }
 
     @include screen-992 {
@@ -67,6 +67,10 @@
     }
 }
 
+#nda-multi-step-form {
+    max-width: 624px;
+    margin: 0 auto;
+}
 
 /* Step form  */
 
@@ -78,6 +82,44 @@
 
     @include screen-992 {
         margin-bottom: 80px;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    @include screen-768 {
+        flex-wrap: wrap;
+        padding-top: 90px;
+        position: relative;
+        row-gap: 30px;
+    }
+
+    @include large-screen {
+        &>div {
+            max-width: 165px;
+        }
+    }
+
+    @include screen-992 {
+        &>div {
+            max-width: 210px;
+        }
+    }
+
+    & .logo {
+        @include large-screen {
+            max-width: 90%;
+            align-items: center;
+        }
+    }
+
+    @include screen-768 {
+        &>div:nth-child(1) {
+            width: 100%;
+            flex: 0 0 auto;
+            max-width: 100%;
+            justify-content: center;
+            margin: 0 !important;
+        }
     }
 }
 
@@ -96,6 +138,18 @@
     justify-content: center;
     cursor: pointer;
     gap: 4px;
+
+    @include screen-1320 {
+        padding: 12px 20px;
+    }
+
+    @include large-screen {
+        font-size: 17px;
+    }
+
+    @include screen-992 {
+        font-size: 18px;
+    }
 
     @include portrait-phone {
         font-size: 15px;
@@ -171,7 +225,25 @@
             background: var(--secondary-color)
         }
     }
+
+    .prev-step {
+        position: relative;
+
+        &::before {
+            content: "➜";
+            display: inline-block;
+            line-height: 1;
+            transform: rotate(180deg);
+            margin: 5px 6px 0 0;
+            transition: 0.1s;
+        }
+    }
 }
+
+.step-circle {
+    cursor: default;
+}
+
 
 .step>h3 {
     font-family: Gilmer;
@@ -208,6 +280,10 @@
         &:hover {
             background: var(--primary-color);
         }
+
+        @include screen-992 {
+            width: 130px;
+        }
     }
 }
 
@@ -220,6 +296,11 @@
 // Sidebar 
 .purchase_sidebar_cnt {
     position: relative;
+    margin-top: 200px;
+
+    @include screen-992 {
+        margin-top: 0;
+    }
 
     & h2 {
         font-size: 60px;
@@ -230,6 +311,22 @@
         @include large-screen {
             font-size: 50px;
             line-height: 62px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 8px;
+            left: -74px;
+            width: 50px;
+            height: 50px;
+            background: #D8E2FC;
+            transform: rotate(45deg);
+            z-index: -1;
+
+            @include large-screen {
+                left: -45px;
+            }
         }
     }
 
@@ -254,6 +351,11 @@
             font-weight: 500;
             line-height: 26.4px;
             color: #7B7B7B;
+
+            @include large-screen {
+                font-size: 20px;
+                line-height: 24.4px;
+            }
 
             @include portrait-phone {
                 font-size: 20px;

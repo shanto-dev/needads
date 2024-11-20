@@ -1322,7 +1322,7 @@ footer.footer_sec {
     margin: 0 auto; }
   @media (max-width: 1199.98px) {
     .purchase_form_area {
-      width: calc(100% - 370px); } }
+      width: calc(100% - 400px); } }
   @media (max-width: 991.98px) {
     .purchase_form_area {
       width: 100%; } }
@@ -1336,8 +1336,8 @@ footer.footer_sec {
     margin-bottom: 174px; }
   @media (max-width: 1199.98px) {
     .purchase_sidebar_area {
-      width: 370px;
-      padding: 49px 25px 49px 30px; } }
+      width: 400px;
+      padding: 49px 25px 49px 40px; } }
   @media (max-width: 991.98px) {
     .purchase_sidebar_area {
       width: 100%;
@@ -1361,41 +1361,7 @@ footer.footer_sec {
   margin-bottom: 133px; }
   @media (max-width: 991.98px) {
     .step-container {
-      margin-bottom: 80px;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      padding-top: 30px; } }
-  @media (max-width: 767.98px) {
-    .step-container {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      padding-top: 90px;
-      position: relative;
-      row-gap: 30px; } }
-  @media (max-width: 1199.98px) {
-    .step-container > div {
-      max-width: 165px; } }
-  @media (max-width: 991.98px) {
-    .step-container > div {
-      max-width: 210px; } }
-  @media (max-width: 1199.98px) {
-    .step-container .logo {
-      max-width: 90%;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; } }
-  @media (max-width: 767.98px) {
-    .step-container > div:nth-child(1) {
-      width: 100%;
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-      flex: 0 0 auto;
-      max-width: 100%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      margin: 0 !important; } }
+      margin-bottom: 80px; } }
 
 .step-circle {
   width: auto;
@@ -1418,15 +1384,6 @@ footer.footer_sec {
   justify-content: center;
   cursor: pointer;
   gap: 4px; }
-  @media (max-width: 1320px) {
-    .step-circle {
-      padding: 12px 20px; } }
-  @media (max-width: 1199.98px) {
-    .step-circle {
-      font-size: 17px; } }
-  @media (max-width: 991.98px) {
-    .step-circle {
-      font-size: 18px; } }
   @media (max-width: 575.98px) {
     .step-circle {
       font-size: 15px;
@@ -1552,9 +1509,6 @@ footer.footer_sec {
   margin-left: auto; }
   .step button[type="button"]:hover {
     background: var(--primary-color); }
-  @media (max-width: 991.98px) {
-    .step button[type="button"] {
-      width: 130px; } }
 
 .step-1 button[type="button"] {
   margin-top: 58px; }
@@ -1562,9 +1516,6 @@ footer.footer_sec {
 .purchase_sidebar_cnt {
   position: relative;
   margin-top: 200px; }
-  @media (max-width: 991.98px) {
-    .purchase_sidebar_cnt {
-      margin-top: 0; } }
   .purchase_sidebar_cnt h2 {
     font-size: 60px;
     font-weight: 800;
@@ -1584,11 +1535,7 @@ footer.footer_sec {
       background: #D8E2FC;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      z-index: -1; }
-      @media (max-width: 1199.98px) {
-        .purchase_sidebar_cnt h2::after {
-          left: -45px; } }
+      transform: rotate(45deg); }
   .purchase_sidebar_cnt h4 {
     font-size: 22px;
     font-weight: 800;
@@ -1606,10 +1553,6 @@ footer.footer_sec {
     font-weight: 500;
     line-height: 26.4px;
     color: #7B7B7B; }
-    @media (max-width: 1199.98px) {
-      .purchase_sidebar_cnt ul li {
-        font-size: 20px;
-        line-height: 24.4px; } }
     @media (max-width: 575.98px) {
       .purchase_sidebar_cnt ul li {
         font-size: 20px;
