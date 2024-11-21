@@ -16,13 +16,17 @@ footer.footer_sec {
         color: var(--white-color);
 
         @include portrait-phone {
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 15px;
+            line-height: 20px;
         }
 
         &:hover {
             color: var(--secondary-color);
         }
+    }
+
+    @include portrait-phone {
+        margin-top: -3px;
     }
 }
 
@@ -35,6 +39,11 @@ footer.footer_sec {
         line-height: 24px;
         color: var(--white-color);
         margin-bottom: 0;
+
+        @include portrait-phone {
+            font-size: 15px;
+            line-height: 20px;
+        }
     }
 
     & ul {
@@ -86,5 +95,8 @@ footer.footer_sec {
 
     @include screen-992 {
         gap: 24px;
+    }
+    @include portrait-phone{
+        max-width: 360px;
     }
 }

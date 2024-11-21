@@ -1,14 +1,4 @@
 // Testimonial 
-var testimonialSwiper = new Swiper('.cStudies_testimonial_carousel', {
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    slidesPerView: 1,
-    spaceBetween: 30,
-});
-
 var bramdSwiper = new Swiper('.brand_carousel', {
     loop: true,
     autoplay: {

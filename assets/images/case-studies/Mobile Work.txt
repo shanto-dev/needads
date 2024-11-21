@@ -1,0 +1,48 @@
+Mobile:
+Make this 15px https://capture.dropbox.com/aiPvgrfqB8UCO9ui and move up some PX so top of text is even with the logo. Also same for copywrite text 15px. Also when click wanna talk text, it scrolls to top of the page, remove that feature.
+
+Make These icons same width as Bottom links https://capture.dropbox.com/Stlor5o2ghBfvYrp
+
+Make title of FAQ boxes not underlined and 18px https://capture.dropbox.com/ULA4TPzpvGL9oMIs 
+
+These boxes need to be smaller https://capture.dropbox.com/kTKauLRxJnND11km
+
+Remove top and bottom red padding so its like this https://capture.dropbox.com/biwd3w5XWCOBEdtr 
+
+This section is cut off on my mobile https://capture.dropbox.com/t2R5hpRDUk45Yy6h 
+
+Make sure this is always on one line https://capture.dropbox.com/Jve3j2swtQwawZLo 
+
+Remove some padding above these sections title https://capture.dropbox.com/6bygqswuKIwtoGLp 
+
+For the header. Make the logo a little smaller and center it. Put links under it (18px) like this https://capture.dropbox.com/l41LFc3KMKohW2Op and change 
+
+Case study page:
+
+These section(s) dont look good https://capture.dropbox.com/HMguJxiSI6HfF3Gi can you make look better?
+
+There is only one set of text on these sections, should not be slider https://capture.dropbox.com/vp3mWTXmmiLkDvPF 
+
+Carreers page:
+Something wrong here https://capture.dropbox.com/hlcNQYmwUyLTkzva
+
+button not centered https://capture.dropbox.com/0kXDSBl2w9k27L2q 
+
+There is no thank you page after hitting submit
+
+there are not privacy policy and terms and conditions pages.
+
+information on form submit does not go to danwellington44@gmail.com
+
+Payment pages:
+Too much padding here https://capture.dropbox.com/U9hLixq5MvjVjRa8
+
+This is wrong back button https://capture.dropbox.com/pcvoX71oQUi5KD7v please use the style from the screenshot i mentioned
+
+After clicking next on each page, a separate email should be sent to danwellington44@gmail.com
+
+The logo is blurry on payment pages
+
+
+
+

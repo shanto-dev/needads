@@ -9,9 +9,12 @@
     & ul {
         @include displayFlex(inline-flex, end, start, row);
         gap: 23px;
-        @include portrait-phone{
-            flex-direction: column;
+
+        @include portrait-phone {
+            justify-content: space-between;
             gap: 8px;
+            width: 100%;
+            padding-top: 18px;
         }
 
         & li {
@@ -20,6 +23,10 @@
                 font-size: 20px;
                 font-weight: 800;
                 line-height: 24px;
+
+                @include portrait-phone {
+                    font-size: 18px;
+                }
             }
         }
     }

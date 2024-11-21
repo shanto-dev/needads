@@ -1,5 +1,9 @@
 .caseStu_banner_heading_sec {
     margin-top: 22px;
+
+    @include portrait-phone {
+        margin-top: 0px;
+    }
 }
 
 .case_studies_banner_cnt2 {
@@ -12,6 +16,7 @@
     @include screen-992 {
         padding-left: 40px !important;
     }
+
     @include screen-768 {
         padding-left: 12px !important;
     }
@@ -22,13 +27,18 @@
     margin-top: 106px;
     background: var(--gray-background);
     padding: 59px 0 100px;
+
+    @include portrait-phone {
+        margin-top: 60px;
+    }
 }
 
 .case_studies_thumb {
     @include displayFlex(flex, space-between, start, row);
     max-width: 899px;
     margin: 0 auto;
-    @include screen-768{
+
+    @include screen-768 {
         flex-direction: column;
         gap: 24px;
     }
@@ -50,8 +60,9 @@
         @include screen-992 {
             width: 66%;
         }
-        @include screen-768{
-            margin:0;
+
+        @include screen-768 {
+            margin: 0;
             width: 100%;
             margin-bottom: 32px;
         }
@@ -69,6 +80,7 @@
             width: 100%;
             margin-right: 24px;
         }
+
         @include screen-768 {
             max-width: 60%;
         }
@@ -141,6 +153,7 @@
     @include screen-992 {
         padding: 16px 60px 40px;
     }
+
     @include screen-768 {
         padding: 16px 20px 30px;
     }
@@ -191,7 +204,8 @@
         max-width: 474px;
         width: 100%;
         margin: 0 auto;
-        @include screen-768{
+
+        @include screen-768 {
             padding-left: 20px;
         }
 
@@ -241,7 +255,8 @@
         font-weight: 600;
         line-height: 24px;
         color: var(--heading-color);
-        @include screen-768{
+
+        @include screen-768 {
             font-size: 18px;
             line-height: 22px;
         }

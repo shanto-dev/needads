@@ -91,16 +91,17 @@
         padding-top: 90px;
         position: relative;
         row-gap: 30px;
+        margin-bottom: 0px;
     }
 
     @include large-screen {
-        &>div {
+        &>div:nth-child(1) {
             max-width: 165px;
         }
     }
 
     @include screen-992 {
-        &>div {
+        &>div:nth-child(1) {
             max-width: 210px;
         }
     }
@@ -115,11 +116,15 @@
     @include screen-768 {
         &>div:nth-child(1) {
             width: 100%;
-            flex: 0 0 auto;
             max-width: 100%;
-            justify-content: center;
             margin: 0 !important;
+            @include displayFlex(flex, center, center, row);
         }
+    }
+
+    & .step_navWrap {
+        @include displayFlex(flex, start, center, row);
+        flex-wrap: nowrap;
     }
 }
 
