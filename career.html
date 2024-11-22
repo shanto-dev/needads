@@ -112,20 +112,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <form class="applyForm" method="post">
+                        <form action="thank-you.php" class="applyForm" method="post" id="applyForm">
                             <h2 class="text-center">Apply</h2>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" name="fname" placeholder="First Name">
+                                    <input type="text" class="form-control" name="fname" placeholder="First Name" required>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" name="lname" placeholder="Last Name">
+                                    <input type="text" class="form-control" name="lname" placeholder="Last Name" required>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <input type="email" class="form-control" name="email" placeholder="Email">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
+                                    <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
                                 </div>
                             </div>
                             <div class="mb-4">
@@ -137,10 +137,11 @@
                                 </select>
                             </div>
                             <div class="mb-4">
-                                <textarea name="message" placeholder="Tell Us About Yourself" class="form-control w-100"></textarea>
+                                <textarea name="message" placeholder="Tell Us About Yourself" class="form-control w-100" required></textarea>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button type="Submit" class="btn btn-primary">Submit</button>
+                                <button type="Submit" class="btn btn-primary">Submit</button><br>
+                                <div class="mt-3 alert con_message" style="display:none"></div>
                             </div>
                         </form>
                     </div>
