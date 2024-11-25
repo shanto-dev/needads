@@ -22,7 +22,7 @@
             <div id="container" class="container pt-lg-5 mt-4">
                 <div class="step-container d-flex justify-content-ceter">
                     <div class="text-start d-inline-flex align-items-center me-4">
-                        <a href="index.html" class="logo d-inline-block text-start"><img src="assets/images/side" alt="NeedAdd"></a>
+                        <a href="index.html" class="logo d-inline-block text-start"><img src="assets/images/logo.svg" alt="NeedAdd"></a>
                     </div>
                     <div class="step_navWrap">
                         <div class="step-circle" onclick="displayStep(1)">1. <span>The Basics</span></div>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-                <form id="nda-multi-step-form">
+                <form id="nda-multi-step-form" method="post">
                     <div class="step step-1">
                         <!-- Step 1 form fields here -->
                         <h3 class="text-center">The Basics</h3>
@@ -50,14 +50,14 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="mb-3 gx-40">
-                                    <label for="email" class="form-label d-none">Last Name</label>
+                                    <label for="email" class="form-label d-none">Email</label>
                                     <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="mb-3 gx-40">
-                                    <label for="phone" class="form-label d-none">Last Name</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone number">
+                                    <label for="phone" class="form-label d-none">Phone</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone number" required>
                                 </div>
                             </div>
                         </div>
@@ -79,25 +79,25 @@
                             <div class="col-sm-6">
                                 <div class="mb-3 gx-40">
                                     <label for="Location" class="form-label d-none">Location</label>
-                                    <input type="text" class="form-control" id="Location" name="Location" placeholder="Location">
+                                    <input type="text" class="form-control" id="Location" name="Location" placeholder="Location" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="mb-3 gx-40">
                                     <label for="advtslocation" class="form-label d-none">Advertising Location</label>
-                                    <input type="text" class="form-control" id="advtslocation" name="advtslocation" placeholder="Advertising Location">
+                                    <input type="text" class="form-control" id="advtslocation" name="advtslocation" placeholder="Advertising Location" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="mb-3 gx-40">
                                     <label for="binstime" class="form-label d-none">Years in business</label>
-                                    <input type="text" class="form-control" id="binstime" name="binstime" placeholder="Years in business">
+                                    <input type="text" class="form-control" id="binstime" name="binstime" placeholder="Years in business" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="sm-3 gx-40">
                                     <label for="ymessage" class="form-label d-none">Message</label>
-                                    <textarea class="form-control" id="ymessage" name="ymessage" placeholder="What do you hope to achieve with our service?"></textarea>
+                                    <textarea class="form-control" id="ymessage" name="ymessage" placeholder="What do you hope to achieve with our service?" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -125,6 +125,9 @@
                         <div class="buttonWrap d-flex justify-content-start mt-5">
                             <div class="text-end">
                                 <button type="button" class="btn btn-primary prev-step">Back</button>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary next-step">Next ➜</button>
                             </div>
                         </div>
                     </div>

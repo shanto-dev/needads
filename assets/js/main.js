@@ -140,39 +140,102 @@
     });
 
 
-    var currentStep = 1;
 
-    function updateActiveStep() {
-        // Update the active state of the step-circle buttons
-        $('.step-circle').removeClass('active');
-        $('.step-circle').eq(currentStep - 1).addClass('active');
+    // Multistep Form 
+    $(document).ready(function () {
+        var currentStep = 1;
 
-        // Show the corresponding step content
-        $('.step').hide();
-        $(".step-" + currentStep).show();
+        function updateActiveStep() {
+            // Update the active state of the step-circle buttons
+            $('.step-circle').removeClass('active');
+            $('.step-circle').eq(currentStep - 1).addClass('active');
+
+            // Show the corresponding step content
+            $('.step').hide();
+            $(".step-" + currentStep).show();
+
+            // Validate the current step
+            validateStep();
+        }
+
+        function validateStep() {
+            let isValid = true;
+
+            // Check all required fields in the current step
+            $(".step-" + currentStep + " :input[required]").each(function () {
+                if (!$(this).val()) {
+                    isValid = false;
+                    return false; // Exit loop on first invalid field
+                }
+            });
+
+            // Enable or disable the Next button
+            $(".next-step").prop('disabled', !isValid);
+        }
+
+        function sendStepData() {
+            const formData = $(".step-" + currentStep + " :input").serialize(); // Serialize the data of the current step
+
+            $.ajax({
+                url: 'your-email-handler-endpoint.php', // Replace with your server-side endpoint
+                method: 'POST',
+                data: formData,
+                success: function (response) {
+                    console.log("Data sent successfully:", response);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error sending data:", error);
+                }
+            });
+        }
+
+        // Next button click handler
+        $(".next-step").click(function () {
+            if (currentStep < 3) { // Adjust max steps as needed
+                sendStepData(); // Send data for the current step
+                currentStep++;
+                updateActiveStep();
+            }
+        });
+
+        // Previous button click handler
+        $(".prev-step").click(function () {
+            if (currentStep > 1) {
+                currentStep--;
+                updateActiveStep();
+            }
+        });
+
+        // Validate the first step on page load
+        updateActiveStep();
+
+        // Trigger validation on input change
+        $(document).on("input", ":input", validateStep);
+    });
+
+
+    // form Handele 
+    function sendStepData() {
+        const formData = $(".step-" + currentStep + " :input").serialize(); // Serialize the data of the current step
+    
+        $.ajax({
+            url: 'form-handler.php', // Adjust the path if needed
+            method: 'POST',
+            data: formData,
+            dataType: 'json',
+            success: function (response) {
+                if (response.success) {
+                    console.log("Data sent successfully:", response.message);
+                } else {
+                    console.error("Server error:", response.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("Error sending data:", error);
+            }
+        });
     }
-
-    // Hide all steps except the first one on load
-    $('#nda-multi-step-form').find('.step').slice(1).hide();
-
-    // Next button click handler
-    $(".next-step").click(function () {
-        if (currentStep < 3) {
-            currentStep++;
-            updateActiveStep();
-        }
-    });
-
-    // Previous button click handler
-    $(".prev-step").click(function () {
-        if (currentStep > 1) {
-            currentStep--;
-            updateActiveStep();
-        }
-    });
-
-    // Initialize the first step as active on page load
-    updateActiveStep();
+    
 
 
 
