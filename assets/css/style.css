@@ -1583,7 +1583,11 @@ footer.footer_sec {
     #nda-multi-step-form button[type="submit"]:hover {
       background: var(--secondary-color); }
   #nda-multi-step-form .prev-step {
-    position: relative; }
+    position: relative;
+    padding: 0 !important;
+    background: transparent;
+    color: var(--body-color);
+    width: auto; }
     #nda-multi-step-form .prev-step::before {
       content: "➜";
       display: inline-block;

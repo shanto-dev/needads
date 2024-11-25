@@ -233,6 +233,10 @@
 
     .prev-step {
         position: relative;
+        padding: 0 !important;
+        background: transparent;
+        color: var(--body-color);
+        width: auto;
 
         &::before {
             content: "➜";
